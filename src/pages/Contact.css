@@ -1,0 +1,211 @@
+/* ── Page Header ── */
+.contact-page-header {
+  background-color: var(--color-secondary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  margin: 1rem;
+  margin-top: 6rem;
+  padding: 5rem 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.contact-page-title {
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--color-white);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.contact-page-subtitle {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 500px;
+  line-height: 1.65;
+}
+
+/* ── Body Layout ── */
+.contact-body {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.contact-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.contact-info-col {
+  flex: 0 0 320px;
+}
+
+.contact-form-col {
+  flex: 1;
+}
+
+/* ── Cards ── */
+.info-card,
+.form-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 3rem 2.5rem;
+}
+
+.card-eyebrow {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+  letter-spacing: -0.03em;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+/* ── Info List ── */
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-item h4 {
+  font-size: 0.72rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.info-value {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text);
+  line-height: 1.5;
+  display: block;
+}
+
+.info-value[href]:hover {
+  color: var(--color-primary);
+}
+
+.contact-img {
+  margin-top: 2rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.contact-img img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Form ── */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.875rem 1rem;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 0.95rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background-color: var(--color-white);
+  box-shadow: 0 0 0 3px rgba(194, 97, 59, 0.1);
+}
+
+.submit-btn {
+  width: 100%;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.form-note {
+  font-size: 0.825rem;
+  color: var(--color-text-light);
+  text-align: center;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .contact-page-title { font-size: 3rem; }
+  .contact-layout { flex-direction: column; }
+  .contact-info-col { flex: none; width: 100%; }
+  .contact-form-col { width: 100%; }
+}
+
+@media (max-width: 768px) {
+  .contact-page-header {
+    margin: 0.5rem;
+    margin-top: 5rem;
+    padding: 3.5rem 1.75rem;
+  }
+  .contact-page-title { font-size: 2.25rem; }
+  .contact-page-subtitle { font-size: 0.95rem; }
+  .contact-body { padding-top: 2rem; padding-bottom: 4rem; }
+  .info-card, .form-card { padding: 2.5rem 1.75rem; }
+  .form-row { flex-direction: column; gap: 1.25rem; }
+  .card-title { font-size: 1.75rem; }
+}

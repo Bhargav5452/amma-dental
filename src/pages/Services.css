@@ -1,0 +1,286 @@
+.services-page {
+  padding-bottom: 2rem;
+}
+
+/* ── Services Hero ── */
+.svc-hero-wrap {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.svc-hero {
+  background-color: var(--color-primary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: stretch;
+  min-height: 620px;
+  padding: 0;
+  overflow: hidden;
+  margin: 1rem;
+  margin-top: 6rem;
+}
+
+.svc-hero-left {
+  flex: 0 0 52%;
+  padding: 3.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.svc-eyebrow {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 1rem;
+}
+
+.svc-hero-title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: var(--color-white);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.75rem;
+}
+
+/* Service list */
+.svc-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.svc-list-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.svc-list-row {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+}
+
+.svc-num {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+  min-width: 2.5rem;
+}
+
+.svc-name {
+  font-size: 1.05rem;
+  color: var(--color-white);
+  font-weight: 400;
+}
+
+.svc-list-item.active .svc-name {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.svc-desc {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.65;
+  padding-left: 4rem;
+  padding-top: 0.5rem;
+  overflow: hidden;
+}
+
+/* Right image — inset with padding and rounded corners like reference */
+.svc-hero-img {
+  flex: 1;
+  padding: 2.5rem 2.5rem 2.5rem 1.5rem;
+}
+
+.svc-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: var(--radius-md);
+  display: block;
+}
+
+
+/* ── Why Choose Us ── */
+.svc-section-header {
+  margin-bottom: 3rem;
+}
+
+.svc-section-header .eyebrow {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.svc-section-header .section-title {
+  font-size: 3.25rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.why-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.why-stat {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.why-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.why-desc {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* ── Process ── */
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.process-num {
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  min-width: 2.5rem;
+  padding-top: 0.2rem;
+}
+
+.process-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.process-desc {
+  font-size: 0.975rem;
+  color: var(--color-text-light);
+  line-height: 1.65;
+  max-width: 560px;
+}
+
+/* ── CTA reuse from Home ── */
+.cta-block {
+  background-color: var(--color-primary);
+  border-radius: var(--radius-lg);
+  padding: 5rem 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cta-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+}
+
+.cta-title {
+  font-size: 3.25rem;
+  font-weight: 500;
+  color: var(--color-white);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  max-width: 600px;
+}
+
+.cta-sub {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.cta-actions {
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .svc-hero-title { font-size: 2.75rem; }
+}
+
+@media (max-width: 768px) {
+  .svc-hero {
+    flex-direction: column;
+    margin: 0.5rem;
+    margin-top: 5rem;
+  }
+  .svc-hero-left { flex: none; padding: 2.5rem 1.75rem; gap: 1.5rem; }
+  .svc-hero-title { font-size: 2rem; }
+  .svc-hero-img { min-height: 240px; padding: 0 1rem 1rem 1rem; }
+
+  .why-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .why-card { padding: 1.75rem 1.25rem; }
+  .why-stat { font-size: 2.25rem; }
+
+  .process-step { flex-direction: column; gap: 0.5rem; padding: 1.75rem 0; }
+
+  .cta-block { padding: 3rem 1.75rem; gap: 1.25rem; }
+  .cta-title { font-size: 2rem; }
+  .cta-actions { flex-direction: column; align-items: center; width: 100%; }
+  .cta-actions a { width: 100%; }
+  .cta-actions a .btn { width: 100%; justify-content: center; }
+}
